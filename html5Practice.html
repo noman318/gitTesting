@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="myPractice | HTML 5 tags" />
+    <title>HTML 5 Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      nav {
+        background-color: black;
+        color: white;
+        justify-content: space-around;
+        padding: 15px;
+        /* padding-left: 10px; */
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+      }
+      a:hover {
+        color: aqua;
+        font-size: 18px;
+        text-decoration: underline;
+      }
+      h2 {
+        margin-left: 200px;
+      }
+      p {
+        margin-left: 40px;
+      }
+      aside {
+        width: 25%;
+        height: 35%;
+        padding-left: 15px;
+        margin-left: 15px;
+        margin-right: 18px;
+        float: right;
+        font-style: italic;
+        background-color: aquamarine;
+        border-radius: 15px;
+      }
+      article {
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: lightgray;
+      }
+      ul {
+        list-style-type: none;
+      }
+      footer {
+        height: 30px;
+        min-height: 20px;
+        max-height: 50px;
+        width: 100%;
+        background-color: #3cff00;
+        color: black;
+        bottom: 0px;
+        text-align: center;
+      }
+      .section2 {
+        margin-left: 30px;
+      }
+      .h3 {
+        margin-left: 45px;
+      }
+      figcaption {
+        margin-left: 50px;
+      }
+      data:hover::after {
+        content: " (ID " attr(value) ")";
+        font-size: 0.7em;
+      }
+      video,
+      audio {
+        margin-left: 40px;
+      }
+      iframe{
+        margin-left: 15px;
+        margin-right: 18px;
+        height: 300px;
+        width: 300px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+      </nav>
+    </header>
+    <h2>Practice HTML 5 tags</h2>
+    <p><b>Practicing HTML 5</b></p>
+
+    <main>
+      <!-- <section> -->
+      <article>
+        <h3>Heading 2</h3>
+        <section>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod
+            necessitatibus aperiam quisquam voluptate
+          </p>
+          <h4>Heading 3</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod
+            necessitatibus aperiam quisquam voluptate
+          </p>
+          <h5>Heading 4</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod
+            necessitatibus aperiam quisquam voluptate
+          </p>
+        </section>
+      </article>
+      <article>
+        <h4>Heading 2</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quod
+          necessitatibus aperiam quisquam voluptate
+        </p>
+      </article>
+      <!-- </section> -->
+    </main>
+    <section>
+      <h3 class="h3">myAside</h3>
+      <aside>
+        <ul>
+          <li><data value="item 100">Item 1</data></li>
+          <li><data value="item 101">Item 2</data></li>
+          <li><data value="item 102">Item 3</data></li>
+          <li><data value="item 103">Item 4</data></li>
+        </ul>
+      </aside>
+    </section>
+    <br /><br />
+    <section class="section2">
+      <h4 class="h3">HTML 5 tags</h4>
+      <details>
+        <summary>What is HTML?</summary>
+        <p>
+          HTML is a markup language for describing the structure of web pages.
+        </p>
+      </details>
+      <br /><br>
+      <iframe src="https://www.tutorialrepublic.com/html-reference/html5-tags.php" style="border:2px solid red;" title="Iframe Example"></iframe>
+      <br /><br>
+      <p>Disk Usage: <meter value="0.2">20%</meter></p>
+      <p>Total Score: <meter low="6" high="8" value="9" min="0" max="10">8 out of 10</meter></p>
+      <p>
+        Pollution Level:
+        <meter low="60" high="80" max="100" value="75">Very High</meter>
+      </p>
+      <br /><br />
+      <p>Enter your favorite browser name:</p>
+      <input style="margin-left: 50px;" type="text" list="browsers" />
+      <datalist id="browsers">
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <br /><br />
+      <p><b>myPicture</b></p>
+      <figure>
+        <img
+          src="https://us04st-cf.zoom.us/static/6.2.8740/image/new/ZoomLogo.png"
+          alt="ZoomLogo"
+        />
+        <figcaption>Logo of Zoom</figcaption>
+      </figure>
+      <br /><br />
+    </section>
+    <section>
+      <h5 class="h3">My video</h5>
+      <video controls="controls">
+        <source src="./public/videoplayback.mp4" type="video/mp4" />
+        <source src="./public/videoplaybackogg.ogg" type="video/ogg" />
+      </video>
+    </section>
+    <br /><br />
+    <section>
+      <h6 class="h3">My audio</h6>
+      <video controls="controls">
+        <source src="./public/file_example_MP3_700KB.mp3" type="audio/mp4" />
+        <source src="./public/file_example_MP3_700KB.ogg" type="audio/ogg" />
+        Your browser does not support the HTML5 Video element.
+      </video>
+    </section>
+    <br /><br />
+    <footer>Contact us</footer>
+  </body>
+</html>

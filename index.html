@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>myPractice</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-style: dashed;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      th,
+      td {
+        border: 1px solid red;
+        padding: 10px;
+        text-align: center;
+      }
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+      }
+      code,
+      kbd {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="html5Practice.html">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="html5Practice.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 style="color: rgb(212, 7, 7)">Getting started with HTML</h2>
+      <!-- <h2>Getting started with HTML</h2>
+      <h3>Getting started with HTML</h3>
+      <h4>Getting started with HTML</h4> -->
+      <p style="color: rgb(212, 7, 7)">This is a paragraph.</p>
+      <a href="https://www.youtube.com/" title="Youtube.com">
+        <img
+          src="https://imgs.search.brave.com/maby19lrbcjubbSRuIMSiIuW3o5r8npdyHACTQaXSAk/rs:fit:676:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5h/Qnl2QWw0Rmw0RGsz/TjlmQTNJdWR3SGFG/TSZwaWQ9QXBp"
+          alt="myImage"
+      /></a>
+        <h2 style="background-color: DodgerBlue; color: aliceblue">
+          This is heading 2
+        </h2>
+      <strong style="background-color: yellow">
+          This is some other text.</strong>
+      <em
+        >my Text is<mark>here</mark></em
+      >
+      <em
+        >my Text is <sub>here</sub> in a para</em
+      >
+      <em
+        >my Text is <del>here</del> <ins>there</ins></em
+      >
+      <em
+        >my Text is <sup>here</sup> in a para</em
+      >
+      <p>Lorem, my text</p>
+      <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+        ipsum dolor sit amet consectetur adipisicing elit.ipsum dolor sit amet
+        consectetur adipisicing elit. ipsum dolor sit amet consectetur
+        adipisicing elit.ipsum dolor sit amet consectetur adipisicing elit.ipsum
+        dolor sit amet consectetur adipisicing elit.
+      </blockquote>
+      Neque, rem. Expedita voluptatibus nisi vel unde? Minus,
+      <q>alias quibusdam voluptate</q>
+      fugit optio nam iste et quaerat voluptates, consectetur libero voluptas
+      <cite>veniam.</cite><br /><br />
+      <code>HTML, CSS, JavaScript</code><br /><br />
+      <bdo dir="rtl">Right</bdo><br /><br />
+      <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+      <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+      <br />
+      <abbr title="hyper text markup language">HTMl</abbr>
+      <br />
+      <br />
+      <address>
+        Written by John Doe.<br />
+        Visit us at:<br />
+        Example.com<br />
+        Box 564, Disneyland<br />
+        USA
+      </address>
+      <br />
+      <br />
+      <aside>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero aut
+        ullam. Sunt nesciunt veniam quidem voluptatem! Est provident iusto quam
+        facilis? Sint pariatur voluptas facere, aperiam nobis magni quisquam.
+      </aside>
+      <br />
+      <picture>
+        <source
+          media="(min-width: 850px)"
+          srcset="
+            https://imgs.search.brave.com/_fznBGKFPFDNU7UxN94fhLqyTj_-AtcnF1IZI0nZv3M/rs:fit:634:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/bzNhbTZQZy1GY2tH/bjFGOHV2eUVRSGFG/aSZwaWQ9QXBp
+          "
+        />
+        <source
+          media="(min-width: 700px)"
+          srcset="
+            https://imgs.search.brave.com/wJvFwuxwfS6WKSXU-498t5UA6ZTMHCsUZTFxm8-4AXc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/ZlI4TjlTbnZ6clVy/LUFOalgwaEJ3SGFF/SyZwaWQ9QXBp
+          "
+        />
+        <img
+          src="https://imgs.search.brave.com/L68RYYFuWeg5Yom1inY1t4WL3mKInzF_BKM9hFg3nqk/rs:fit:313:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5h/cW9MVHZrSGp1Rk5p/dG44MUN0LXhnSGFM/TiZwaWQ9QXBp"
+          style="width: auto" alt="image"
+        />
+      </picture>
+      <br />
+      <br />
+      <table style="width: 50%">
+        <tr>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>doe@gamil.com</td>
+          <td>doe</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>shak@gamil.com</td>
+          <td>shak</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>jign@gamil.com</td>
+          <td>jign</td>
+          <td>48</td>
+        </tr>
+      </table>
+      <br /><br />
+      <ul style="list-style-type: square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      <br /><br />
+      <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Latte</li>
+        <li>Green Tea</li>
+        <li>Milk</li>
+      </ol>
+    </div>
+  </body>
+</html>
